@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {ComputerGesture} from '../../components/computer-gesture';
-import {GestureBar} from '../../components/gesture-bar';
-import {Timer} from '../../components/timer';
+import {ComputerGesture} from '../../shared/components/computer-gesture';
+import {GestureBar} from '../../shared/components/gesture-bar';
+import {Timer} from '../../shared/components/timer';
 
 import './index.scss';
 

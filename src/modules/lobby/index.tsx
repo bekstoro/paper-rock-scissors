@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {Table} from '../../components/table';
-import {Header} from '../../components/header';
-import {Footer} from '../../components/footer';
+import {Table} from '../../shared/components/table';
+import {Header} from '../../shared/components/header';
+import {Footer} from '../../shared/components/footer';
 
 import './index.scss';
 
