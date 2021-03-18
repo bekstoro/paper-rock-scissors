@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 
 import Lobby from './modules/lobby';
-import {GameZone} from './modules/game-zone';
+import GameZone from './modules/game-zone';
 import {setInitialBalance} from './redux/actions/game';
 import {IState} from './redux/types/game';
 import {Header} from './shared/components/header';
@@ -32,7 +32,7 @@ function App(props: IAppProps) {
             <Header balance={props.balance}/>
             <section className="body">
                 <Lobby/>
-                <GameZone table={props.tables[0]} index={1}/>
+                <GameZone/>
             </section>
         </section>
     );

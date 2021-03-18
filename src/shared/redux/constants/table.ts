@@ -1,2 +1,5 @@
-export const MAKE_BET = 'MAKE_BET';
-export const SET_NUMBER_OF_TABLES = 'SET_NUMBER_OF_TABLES';
+export const MAKE_BET = 'MAKE_BET'
+export const SELECT_TABLE = 'SELECT_TABLE'
+export const SET_BETTING = 'SET_BETTING'
+export const SET_COOLDOWN = 'SET_COOLDOWN'
+export const SET_NUMBER_OF_TABLES = 'SET_NUMBER_OF_TABLES'
