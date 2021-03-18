@@ -1,0 +1,12 @@
+.ComputerGesture-component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > .Gesture-component {
+    width: 15rem;
+    height: 15rem;
+  }
+}

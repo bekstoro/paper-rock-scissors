@@ -6,8 +6,8 @@ import './index.scss';
 
 export function ComputerGesture() {
     return (
-        <section>
-            <Gesture/>
+        <section className="ComputerGesture-component">
+            <Gesture type="Paper"/>
         </section>
     );
 }

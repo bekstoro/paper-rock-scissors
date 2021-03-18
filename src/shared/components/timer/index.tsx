@@ -4,6 +4,6 @@ import './index.scss';
 
 export function Timer() {
     return (
-        <section></section>
+        <section className="Timer-component"></section>
     );
 }

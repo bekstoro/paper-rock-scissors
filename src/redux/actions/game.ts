@@ -1,15 +1,15 @@
-import {MAKE_BET} from '../constants/game';
+import {SET_INITIAL_BALANCE} from '../constants/game';
 
-export type IMakeBet = {
+export type ISetInitialBalance = {
     type: string
     payload: number
 }
 
-export function makeBet(payload: number): IMakeBet {
+export function setInitialBalance(payload: number): ISetInitialBalance {
     return {
         payload,
-        type: MAKE_BET
-    }
+        type: SET_INITIAL_BALANCE
+    };
 }
 
-export type IGameActions = IMakeBet
+export type IGameActions = ISetInitialBalance;

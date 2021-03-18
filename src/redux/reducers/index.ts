@@ -4,5 +4,5 @@ import {table} from '../../shared/redux/reducers/table';
 
 export default combineReducers({
     game,
-    table
+    shared: table
 });

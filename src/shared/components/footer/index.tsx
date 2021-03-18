@@ -7,10 +7,10 @@ import './index.scss';
 
 export function Footer() {
     return (
-        <section>
+        <section className="Footer-component">
             <ChipsBar/>
-            <RoundButton/>
-            <RoundButton/>
+            <RoundButton type="refill"/>
+            <RoundButton type="undo"/>
         </section>
     );
 }

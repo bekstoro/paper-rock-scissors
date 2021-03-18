@@ -6,10 +6,10 @@ import './index.scss';
 
 export function ChipsBar() {
     return (
-        <section>
-            <Chip/>
-            <Chip/>
-            <Chip/>
+        <section className="ChipsBar-component">
+            <Chip type={10}/>
+            <Chip type={25}/>
+            <Chip type={50}/>
         </section>
     );
 }

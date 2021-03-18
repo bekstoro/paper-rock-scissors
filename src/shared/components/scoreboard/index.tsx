@@ -4,6 +4,6 @@ import './index.scss';
 
 export function Scoreboard() {
     return (
-        <section></section>
+        <section className="Scoreboard-component"></section>
     );
 }

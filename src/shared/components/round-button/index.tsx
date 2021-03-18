@@ -2,8 +2,12 @@ import React from 'react';
 
 import './index.scss';
 
-export function RoundButton() {
+interface IRoundButtonProps {
+    type: string
+}
+
+export function RoundButton(props: IRoundButtonProps) {
     return (
-        <section></section>
+        <button className="RoundButton-component">{props.type}</button>
     );
 }

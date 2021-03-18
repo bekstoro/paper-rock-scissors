@@ -1,2 +1,1 @@
-export const MAKE_BET = 'MAKE_BET';
-
+export const SET_INITIAL_BALANCE = 'SET_INITIAL_BALANCE';

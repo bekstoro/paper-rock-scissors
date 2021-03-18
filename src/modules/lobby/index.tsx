@@ -1,18 +1,31 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
-import {Table} from '../../shared/components/table';
-import {Header} from '../../shared/components/header';
+import {IState} from '../../redux/types/game';
 import {Footer} from '../../shared/components/footer';
+import {Table} from '../../shared/components/table';
+import {ITable} from '../../shared/redux/types/table';
 
 import './index.scss';
 
-export function Lobby() {
+interface ILobbyProps {
+    tables: Array<ITable>
+}
+
+function Lobby(props: ILobbyProps) {
     return (
-        <section>
-            <Header/>
-            <Table/>
-            <Table/>
+        <section className="Lobby-component">
+            {props.tables && props.tables?.map((table, index) => (
+                <Table key={index} index={index} table={table}/>
+            ))}
             <Footer/>
         </section>
     );
 }
+
+export default connect(
+    (state: IState) => ({
+        tables: state.shared.tables,
+    }),
+    (dispatch: any) => ({})
+)(Lobby)

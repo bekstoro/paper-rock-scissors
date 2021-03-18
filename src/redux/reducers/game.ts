@@ -1,17 +1,17 @@
 import {IGameActions} from '../actions/game';
-import {MAKE_BET} from '../constants/game';
+import {SET_INITIAL_BALANCE} from '../constants/game';
 import {IGameState} from '../types/game';
 
-const initialState: IGameState = {};
+const initialState: IGameState = {
+    balance: 0,
+};
 
-export function game(state: IGameState, action: IGameActions): IGameState {
-    if (typeof state === 'undefined') {
-        return initialState
-    }
-    switch(action.type) {
-        case MAKE_BET:
+export function game(state: IGameState = initialState, action: IGameActions): IGameState {
+    switch (action.type) {
+        case SET_INITIAL_BALANCE:
             return {
-                ...state
+                ...state,
+                balance: action.payload,
             };
         default:
             return state;

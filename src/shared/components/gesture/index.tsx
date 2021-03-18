@@ -1,9 +1,16 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import './index.scss';
 
-export function Gesture() {
+interface IGestureProps {
+    type: string
+}
+
+export function Gesture(props: IGestureProps) {
     return (
-        <section></section>
+        <section className={classNames('Gesture-component', `Gesture-component-${props.type}`)}>
+            {props.type}
+        </section>
     );
 }

@@ -1,0 +1,26 @@
+.Chip-component {
+  width: 5rem;
+  height: 5rem;
+  background-color: #4b4b4b;
+  border-radius: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-10 {
+    background-color: #b74343;
+  }
+
+  &-25 {
+    background-color: #22a322;
+  }
+
+  &-50 {
+    background-color: #3e3e97;
+  }
+
+  & > h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+}

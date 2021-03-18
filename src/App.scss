@@ -1,0 +1,7 @@
+.App-component {
+  & > .body {
+    display: grid;
+    grid: auto / 35rem 35rem;
+    justify-content: center;
+  }
+}

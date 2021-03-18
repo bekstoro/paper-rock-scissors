@@ -4,10 +4,14 @@ import {Wallet} from '../wallet';
 
 import './index.scss';
 
-export function Header() {
+interface IHeaderProps {
+    balance: number
+}
+
+export function Header(props: IHeaderProps) {
     return (
-        <header>
-            <Wallet/>
+        <header className="Header-component">
+            <Wallet balance={props.balance} label="Balance"/>
         </header>
     );
 }

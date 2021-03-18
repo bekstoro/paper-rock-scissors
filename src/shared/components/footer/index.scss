@@ -1,0 +1,10 @@
+.Footer-component {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  width: 100%;
+  justify-content: center;
+  background-color: #212121;
+  padding: 1rem 0;
+  align-items: center;
+  justify-items: center;
+}
